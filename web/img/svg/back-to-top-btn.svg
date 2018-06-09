@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>BT - Back to top</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="YelloWeek---04---City-page---Compact-menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="YelloWeek---04---City-page---Compact-menu/LG---960" transform="translate(-21.000000, -8.000000)">
+            <g id="Compact-menu">
+                <g id="BT---Back-to-top" transform="translate(38.000000, 25.000000) rotate(-180.000000) translate(-38.000000, -25.000000) translate(21.000000, 8.000000)">
+                    <circle id="Oval" fill="#FFA616" cx="17" cy="17" r="17"></circle>
+                    <path d="M16.5,0.99443199 L16.5,23.4468889" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                    <path d="M16.5,23.8024691 L9.38201711,16.4911583" id="Line-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                    <path d="M23.8076923,23.8024691 L16.6897094,16.4911583" id="Line-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" transform="translate(20.153846, 20.049383) scale(-1, 1) translate(-20.153846, -20.049383) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

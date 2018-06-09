@@ -1,0 +1,177 @@
+#yw-plan {
+  
+  @media #{$sm-up} {
+    margin-top: 100px;    
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+  }
+  
+  #yw-map {
+    position: absolute !important;
+    width: 100%;
+    height: 700px;
+    @media #{$sm-up} {
+      width: calc(100% - 30px);
+    }
+    @media #{$md-up} {
+      width: calc(960px + ((100% - 960px)/2));
+      right: 0;
+    }
+  }
+  
+  .plan-filtre {
+    position: relative;
+    background-color: $quasi-noir;
+    display: none;
+    @media #{$sm-up} {
+      width: 220px;      
+      height: 346px;
+      margin-top: 180px;
+      margin-left: -15px;
+      padding-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media #{$md-up} {
+      width: calc(50% - 275px);
+      padding-left: calc(50% - 460px);
+    }
+    
+    .plan-liste {
+      .plan-expitem {
+        font-family: $titre-bold;
+        font-size: 9px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        & + .plan-expitem {
+          margin-top: 30px;
+        }
+        &.disabled {
+          color: $gris-moyen3 !important;
+        }
+      }
+    }
+  }
+  
+  .titre {
+    width: 200px;
+    
+    position: relative;
+    left: 50%;
+    @include translateX(-50%);     
+    margin-top: -23px; 
+    
+    @media #{$sm-up} {
+      position: absolute;
+      left: auto;
+      @include translateX(0);
+      margin-top: -384px;
+      width: 340px;
+     
+    }
+    @media #{$md-up} { 
+      @include translateX(0);
+      left: calc(50% - 480px);
+    }
+    
+  }
+  
+  .plan-infowindow {
+    
+    background-color: $blanc;
+    text-align: center;
+    width: 296px;
+    
+    .expe {
+      
+      text-align: center;
+      font-family: $titre-bold;
+      font-size: 12px;
+      color: #43B365;
+      letter-spacing: 0.26px;
+      text-align: center;
+      line-height: 0.7em;
+      padding-top: 30px;
+      padding-bottom: 40px;
+      
+      &::first-line {
+        font-family: $serif-bold;
+        font-size: 50px;
+        color: rgba(83,83,83,0.05);
+        letter-spacing: 0.81px;
+      }
+      @include font-smoothing(on);
+    }
+    .dates {
+      font-family: $titre-regular;
+      font-size: 10px;
+      color: $quasi-noir;
+      text-align: center;
+      text-transform: uppercase;
+      @include font-smoothing(on);
+    }
+    .nom {
+      font-family: $serif-bold;
+      font-size: 30px;
+      color: $jaune;
+      text-align: center;
+      line-height: 30px;
+      @include font-smoothing(on);
+      padding-bottom: 20px;
+
+    }
+    .contact {
+      background-color: $blanc-fonce;
+      
+      text-align: center;
+      font-family: $serif-light;
+      color: $noir;
+      line-height: 1.2em;
+      @include font-smoothing(on);
+      width: 100%;
+      padding: 20px 0 40px;
+      
+      
+      .oblique {
+        font-family: $serif-italic;
+      }
+      .strong {
+        font-family: $serif-bold;
+      }
+
+    }
+    .bouton {
+      position: absolute;
+      margin-top: -23px;
+      width: 296px;
+      a {
+        display: inline-block;
+        font-family: $titre-bold;
+        font-size: 10px;       
+        width: 170px;
+        height: 47px;
+        line-height: 47px;
+        background-color: $jaune;
+        text-transform: uppercase;
+        color: $quasi-noir;
+        @include transition(color .2s ease-out);
+        
+        html.no-touch &:hover {
+          color: $blanc;
+        }
+      }
+    }
+    
+  }
+  
+  .gm-style .gm-style-iw {
+    overflow: visible;
+    left: 30px !important;
+    & + div {
+      display: none;
+    }
+  }
+}

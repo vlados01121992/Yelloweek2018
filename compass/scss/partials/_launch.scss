@@ -1,0 +1,121 @@
+.yelloweek-launch {
+  background-color: $jaune;
+}
+
+
+#yw-maincontainer.launch {
+  background-color: $noir;
+  min-height: 100%;
+  #topzone {
+    height: 100%;
+    background-position: center 30px; 
+    @media #{$sm-up} {
+      background-position: center top;
+      height: auto; 
+      margin-bottom: 0;
+    }
+  }
+}
+#yw-launch {
+  
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    @include translateX(-50%);
+    
+    width: 278px;
+    @media #{$sm-up} {
+      width: 687px;
+      top: 160px;
+    }
+    @media #{$md-up} {
+      width: 861px;
+      top: 156px;
+    }
+  }
+  
+  .content-zone {
+    text-align: center;
+    
+    
+    background-image: image-url('gui/launch-bloc-xs.png');
+    html.hires & {
+      background-image: image-url('gui/launch-bloc-xs@2x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    margin: 100% auto 30px;
+    @media #{$sm-up} {
+      
+      width: 450px;
+      margin-top: 390px;
+      margin-bottom: 0;
+      background-size: contain;
+      
+      background-image: image-url('gui/launch-bloc.png');
+      html.hires & {
+        background-image: image-url('gui/launch-bloc@2x.png');
+      }
+    }
+    @media #{$md-up} {
+      margin-top: 350px;
+    }
+    .date {
+      position: relative;
+      left: 50%;
+      @include translateX(-50%);
+      width: 120px;
+    }
+    .fleche {
+      background-image: image-url('svg/arrow-down-jaune.svg');
+      background-repeat: no-repeat;
+      background-position: center 15px;
+      background-size: 25px 45px;
+      width: 100%;
+      height: 60px;
+    }
+    .titre {
+      font-family: $serif-bold;
+      font-size: 24px;
+      color: $jaune;
+      text-align: center;
+      @include font-smoothing(on);
+      padding-bottom: 30px;
+      @media #{$sm-up} {
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+    }
+    .liste {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .place-item {
+      
+      font-family: $titre-bold;
+      font-size: 12px;
+      color: $quasi-noir;
+      text-align: center;
+      line-height: 36px;
+      text-transform: uppercase;
+      
+      @include font-smoothing(on);
+      
+      a {
+        display: inline-block;
+        padding: 3px 0;
+        color: $quasi-noir;
+        @include transition(color .2s ease-out);
+        html.no-touch &:hover {
+          
+          color: $jaune;
+        }
+      }
+    }
+  }
+  
+}

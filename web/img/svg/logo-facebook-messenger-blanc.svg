@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-facebook-messenger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="YelloWeek---07---Sharing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="YelloWeek---07---Sharing/Sharing-behaviour" transform="translate(-876.000000, -596.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+            <g id="Tap-icons" transform="translate(727.000000, 576.000000)">
+                <g id="facebook-messenger" transform="translate(150.000000, 21.000000)">
+                    <g id="logo-facebook-messenger">
+                        <path d="M11.5,0 C5.14871429,0 0,4.7673179 0,10.6481481 C0,13.9991204 1.67228571,16.9881265 4.28571429,18.9400031 L4.28571429,23 L8.20135714,20.8509907 C9.24635714,21.1401944 10.3534286,21.2962963 11.5,21.2962963 C17.8512857,21.2962963 23,16.5289784 23,10.6481481 C23,4.7673179 17.8512857,0 11.5,0 Z M12.6842105,15 L9.74162679,11.7234043 L4,15 L10.3157895,8 L13.3301435,11.2765957 L19,8 L12.6842105,15 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

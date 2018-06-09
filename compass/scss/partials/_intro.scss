@@ -1,0 +1,211 @@
+#topzone {
+  width: 100%;
+  background-color: $jaune;
+  
+  background-image: image-url('gui/intro_bg-xs.jpg');
+  background-repeat: no-repeat;
+  background-position: center 140px;
+  background-size: contain;
+  
+  html.hires & {
+    background-image: image-url('gui/intro_bg-xs@2x.jpg');
+  }
+  
+  @media #{$sm-up} {
+    
+    background-image: image-url('gui/intro_bg-sm.jpg');
+    background-position: center 50px;
+    background-size: 844px 720px;
+    
+    html.hires & {
+      background-image: image-url('gui/intro_bg-sm@2x.jpg');
+    }
+
+    margin-bottom: 50px;
+
+  }
+  
+  
+  @media #{$md-up} {
+    background-size: 1554px 720px;
+    background-image: image-url('gui/intro_bg-md.jpg');
+    background-position: 50% top;
+    html.hires & {
+      background-image: image-url('gui/intro_bg-md@2x.jpg');
+    }
+
+    margin-bottom: 90px;
+
+  }
+  
+}
+
+#yw-intro {
+  
+  .titre-date {
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    height: 56px; 
+    @include translateX(-50%);
+    @media #{$sm-up} {
+      top: 90px;
+      height: 67px;
+    }
+    @media #{$md-up} {
+      top: 125px;
+    }
+  }
+  
+  .logo {
+    text-align: center;
+    width: 100%;
+    @include calc('margin-top', '100% + 60px');
+    img { width: 140px; }
+    @media #{$sm-up} {
+      margin-top: 600px;
+      img { width: 295px; }
+    }
+    @media #{$md-up} {
+      margin-top: 200px;
+    }
+  }
+  
+  .city {
+    font-family: $titre-bold;
+    color: $blanc;
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-size: 44px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @media #{$sm-up} {
+      font-size: 104px;
+      margin-top: -25px;
+      margin-bottom: 0;
+      letter-spacing: -0.07em;
+    }
+      
+    @media #{$md-up} {
+      font-size: 124px;
+      margin-top: -35px;
+      letter-spacing: -0.07em;
+    }
+    
+    @include font-smoothing(on);
+  }
+  
+  .content-zone {
+    background-color: $blanc;
+    padding-bottom: 75px;
+    @media #{$sm-up} {
+      background-color: transparent;      
+      background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.74) 45%, #FFFFFF 100%), image-url('gui/intro-fond.png'), linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 100%);
+      background-position: center 150px, center top, center 330px;
+      background-repeat: no-repeat;
+      background-size: 100% 200px, 500px 410px, 100% 100%; 
+      html.hires & {
+        background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.74) 45%, #FFFFFF 100%), image-url('gui/intro-fond@2x.png'), linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 100%);
+      }  
+      padding-bottom: 75px;
+    }
+    @media #{$md-up} {
+      padding-bottom: 50px
+ //     margin-top: -30px;
+    }
+    
+    
+    .titre {
+      text-align: center;
+      font-family: $titre-bold;
+      color: $noir;
+      font-size: 35px;
+      line-height: 0.9em;
+      padding-top: 45px;
+      text-transform: uppercase;
+
+      @media #{$sm-up} {
+        font-size: 40px;
+        padding-top: 80px;
+        line-height: 1.2em;
+      }
+      .first {        
+      }
+      .second {
+        color: $jaune;
+      }
+      @include font-smoothing(on);
+    }
+    
+    .contenu {
+      
+      text-align: justify;
+      font-family: $serif-light;
+      color: $noir;
+      font-size: 16px;
+      line-height: 1.2em;
+      padding: 30px 20px; 
+      @include font-smoothing(on);
+      .oblique {
+        font-family: $serif-italic;
+      }
+      p {
+        padding-bottom: 30px;
+      }
+      
+      @media #{$sm-up} {
+        width: 347px;
+        transform: translateX(-50%);
+        left: 50%;
+        padding: 20px 0 0;
+        position: relative;
+      }
+    }
+    .instagram {
+      
+      
+      background-image: image-url('svg/icon_instagram.svg');
+      background-repeat: no-repeat;
+      background-size: 38px 38px;
+      background-position: center top;
+      
+      text-align: center;
+      a {
+      padding-top: 55px;
+        display: inline-block;
+        font-family: $titre-bold;
+        text-transform: uppercase;
+        color: $jaune;
+        font-size: 17.5px;
+        line-height: 1.1em;
+        letter-spacing: -0.02em;
+
+        
+        &::first-line {
+          font-size: 12px;
+          letter-spacing: 0.0em;
+        }
+        
+        @include transition(color .2s ease-out);
+
+        html.no-touch &:hover {
+          color: $noir;
+        }
+        
+        @include font-smoothing(on);
+      
+     //   @media #{$sm-up} {
+     //   
+     //     font-size: 35px;
+     //     &::first-line {
+     //       font-size: 24px;
+     //     }
+     //   }
+      }
+    }
+  }
+  
+  
+}

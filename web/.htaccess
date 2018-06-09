@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+
+RewriteEngine on
+
+#RewriteRule ^([a-z]{2}-[a-z]{2})/([\w-]*)(^/[\w-]/$+)([\w-]*)(/?)$   index.php?locale=$1&place=$2&popin=$3&location=$4&slash=$5 [L]
+
+
+RewriteRule ^([a-z]{2}-[a-z]{2})/([a-z-]*)((/?)([a-z]*)(/?)([a-z-_]*)(/?))$   index.php?locale=$1&place=$2&popin=$5&location=$7&arguments=$3 [L]

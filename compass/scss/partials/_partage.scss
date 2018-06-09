@@ -1,0 +1,170 @@
+.btn-share {
+  overflow: hidden;
+  width: 150px;
+  
+  
+  .sh-cont { 
+    @include transition(transform  .4s ease-out);
+    width: 300px;
+  }
+  
+  &.open {
+    &.share-right {
+      .sh-cont {
+        @include translateX(0);
+      }
+    }
+    &.share-left {
+      .sh-cont {
+        @include translateX(-150px);
+      }
+    }
+    &.share-top {
+      .sh-cont {
+        @include translateY(-65px);
+      }
+    }
+  }
+  
+  .sh-texte {
+    
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    
+
+    font-family: $titre-bold;
+    font-size: 14px;
+    color: $jaune;
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+    @include font-smoothing(on);
+    a {
+      display: inline-block;
+      color: $jaune;
+      padding: 0 10px;
+    }
+  }
+  
+  .sh-apps {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  
+  
+  &.share-top {
+    height: 65px;
+    border-bottom: 2px solid $jaune;
+    .sh-texte {
+      background-image: image-url('svg/arrow-sh-up-jaune.svg');
+      background-repeat: no-repeat;
+      background-size: 15px 24px;
+      background-position: center top;
+      display: block;
+      text-align: center;
+      line-height: 80px;
+      height: 65px;
+    }
+    .sh-apps {
+      display: block;
+      height: 65px;
+    }
+    .sh-cont {
+      width: 150px;
+    }
+  }
+  &.share-right {
+    height: 50px;
+    border-left: 2px solid $jaune;
+    .sh-texte {
+      float: right;
+      text-align: left;
+      background-image: image-url('svg/arrow-sh-right-jaune.svg');
+    
+      background-repeat: no-repeat;
+      background-size: 32px 15px;
+      background-position: right center;
+    }
+    &.share-blanc {
+    .sh-texte {
+        background-image: image-url('svg/arrow-sh-right-blanc.svg');
+      }
+    }
+    .sh-apps {
+      float: left;
+    }
+    .sh-cont {
+      @include translateX(-150px);
+    }
+  }
+  &.share-left {
+    height: 50px;
+    border-right: 2px solid $jaune;
+    .sh-texte {
+      float: left;
+      text-align: right;
+      background-image: image-url('svg/arrow-sh-left-jaune.svg');
+      background-repeat: no-repeat;
+      background-size: 32px 15px;
+      background-position: left center;
+    }
+    .sh-apps {
+      float: right;
+    }
+  }
+  
+  &.share-blanc {
+    border-color: $blanc;
+    .sh-texte a {
+      color: $blanc;
+    }
+  }
+  
+  .sh-app {
+    margin: 15px 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+      
+    &.sh-facebook {
+      background-image: image-url('svg/logo-facebook.svg');
+    background-size: 14px 24px;
+    }
+    &.sh-twitter {
+      background-image: image-url('svg/logo-twitter-bird.svg');
+    background-size: 24px 19px;
+    }
+    &.sh-whatsapp {
+      background-image: image-url('svg/logo-whatsapp.svg');
+    }
+    &.sh-messenger {
+      background-image: image-url('svg/logo-facebook-messenger.svg');
+      background-size: 25px 25px;
+    }
+    & + .sh-app {
+      margin-left: 10px;
+    }
+  }
+  
+  &.share-blanc {
+    
+    .sh-facebook {
+      background-image: image-url('svg/logo-facebook-blanc.svg');
+    }
+    .sh-twitter {
+      background-image: image-url('svg/logo-twitter-bird-blanc.svg');
+    }
+    .sh-whatsapp {
+      background-image: image-url('svg/logo-whatsapp-blanc.svg');
+    }
+    .sh-messenger {
+      background-image: image-url('svg/logo-facebook-messenger-blanc.svg');
+    }
+  }
+}
